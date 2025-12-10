@@ -1,21 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  ExternalLink, 
-  Code2, 
-  Database, 
-  Server, 
-  Layers,
-  ChevronDown,
-  Terminal,
-  Briefcase,
-  GraduationCap,
-  MapPin
-} from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Server, Layers, ChevronDown, Terminal, Briefcase, GraduationCap, MapPin } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
@@ -27,7 +13,7 @@ const navItems = [
 
 const projects = [
   {
-    title: "KM Bank",
+    title: "KM Bank App",
     description: "A comprehensive digital banking platform featuring secure JWT authentication, real-time account management, transaction processing, and an analytics dashboard. Built with a focus on security and user experience.",
     tech: ["React", "Vite", "Java", "Spring Boot", "PostgreSQL", "JWT", "Tailwind CSS"],
     features: ["User Authentication", "Account Management", "Transaction History", "Analytics Dashboard", "Fund Transfers"],
@@ -38,7 +24,7 @@ const projects = [
     inProgress: true,
   },
   {
-    title: "Personal Portfolio",
+    title: "Personal Portfolio Draft",
     description: "A responsive, mobile-first personal portfolio website showcasing projects and skills. Features interactive elements with smooth animations and a clean, professional design that works seamlessly across all devices.",
     tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     features: ["Mobile-First Design", "Project Gallery", "Lightbox Functionality", "Custom Animations", "Responsive Layout"],
@@ -63,12 +49,12 @@ const skills = {
   frontend: {
     title: "Frontend",
     icon: Code2,
-    items: ["React", "Tailwind CSS", "Bootstrap", "Vite", "HTML/CSS"],
+    items: ["React", "Next","Tailwind CSS", "Bootstrap", "Vite", "HTML/CSS"],
   },
   backend: {
     title: "Backend",
     icon: Server,
-    items: ["Java", "Spring Boot", "Node.js", "Express.js", "REST APIs", "JWT Auth"],
+    items: ["Java", "Spring Boot", "Javascript", "Node.js", "Express.js", "REST APIs", "JWT Auth"],
   },
   database: {
     title: "Database",
@@ -100,7 +86,7 @@ export default function Home() {
             className="font-display font-bold text-2xl text-accent"
             whileHover={{ scale: 1.05 }}
           >
-            K<span className="text-pearl">.</span>
+            Kenon Sahirani <span className="text-pearl">Portfolio</span>
           </motion.a>
           
           <div className="hidden md:flex items-center gap-8">
@@ -192,9 +178,9 @@ export default function Home() {
             className="text-xl md:text-2xl text-ash max-w-2xl mx-auto mb-8 font-light"
           >
             Full-Stack Developer crafting modern, scalable web applications with 
-            <span className="text-accent"> React</span>, 
-            <span className="text-highlight"> Java Spring Boot</span>, and 
-            <span className="text-success"> PostgreSQL</span>
+            <span className="text-accent"> React, Next</span>, 
+            <span className="text-highlight"> Springboot, Express</span>, and 
+            <span className="text-success"> PostgreSQL, MongoDB</span>
           </motion.p>
 
           <motion.div
@@ -232,7 +218,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.5 }}
             className="flex items-center justify-center gap-6 text-ash"
           >
-            {["React", "Java", "PostgreSQL", "TypeScript", "Spring"].map((tech, i) => (
+            {["React", "Java", "PostgreSQL", "Springboot", "Javascript", "Express JS", "MongoDB"].map((tech, i) => (
               <motion.span
                 key={tech}
                 initial={{ y: 20, opacity: 0 }}
@@ -328,9 +314,9 @@ export default function Home() {
   name: "Kenon",
   role: "Full-Stack Developer",
   skills: {
-    frontend: ["React", "Next.js", "TypeScript"],
-    backend: ["Java", "Spring Boot", "Node.js"],
-    database: ["PostgreSQL", "MongoDB"],
+    frontend: ["React", "Next.js"],
+    backend: ["SpringBoot", "Node.js", "Express.js"],
+    database: ["PostgreSQL", "MongoDB", "MySQL"],
   },
   passion: "Building impactful applications",
   currentFocus: "Banking & FinTech",
