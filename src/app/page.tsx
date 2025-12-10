@@ -537,7 +537,7 @@ export default function Home() {
             </p>
             
             <motion.a
-              href="mailto:kenon@example.com"
+              href="mailto:kenonsahirani07@gmail.com"
               whileHover={{ scale: 1.05, boxShadow: "0 0 40px rgba(0,240,255,0.4)" }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-3 px-10 py-5 bg-accent text-obsidian font-semibold text-lg rounded-full transition-all"
