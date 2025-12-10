@@ -550,7 +550,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-6 mt-12">
               {[
                 { icon: Github, href: "https://github.com/ksahirani", label: "GitHub" },
-                { icon: Linkedin, href: "www.linkedin.com/in/kenon-sahirani-5a7422307", label: "LinkedIn" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/kenon-sahirani-5a7422307/", label: "LinkedIn" },
                 { icon: Mail, href: "mailto:kenonsahirani07@gmail.com", label: "Email" },
               ].map((social) => (
                 <motion.a
